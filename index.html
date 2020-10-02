@@ -11,18 +11,22 @@
 </head>
 <body class ="bg-light">
     <div class="container bg-white">
-
+        <!--aqui comienza el encabezado la parte roja-->
         <div class ="bg-danger row">
             <!--Primera parte-->
             <div class ="col-6 py-3">
                 <div class="d-inline-block" id="logo">
                     <img src="logo.png" alt="logo" class="img-fluid">
                 </div>
-                <div class="d-inline-block text-white h1">
+                <!--Para cambiar el tamaño-->
+                <div class="d-none d-md-inline-block text-white h1">
                     Nombre pagina
                 </div>
             </div>
-            <div class="col-6 p-2">
+            <!--Parte derecha, formulario de busqueda-->
+            <!--d-none indica que en dispositivos pequeños no se vea, d-md-block dispositivos medianos se 
+                despega en bloques-->
+            <div class="d-none d-md-block col-6 p-2">
                 <div class="row text-right">
                     <form class="d-inline-block form-inline">
                         <div class="input-group">
@@ -36,6 +40,7 @@
                         </div>
                         
                     </form>
+                    <!--Botones-->
                     <div class="ml-3 text-right d-inline-block">
                         <button class="btn btn-danger" type="button" data-toggle="modal" data-target="#modalLogin">
                             Inicio de sesión
@@ -49,6 +54,7 @@
 
                     </div>
                 </div>
+                <!--Menu-->
                 <div class="mt-2">
                     <ul class="list-group list-group-horizontal text-center">
                         <li class="list-group-item list-group-item-action">Menu 1</li>
@@ -58,21 +64,32 @@
                 </div>
 
             </div>
+            <!--Se hace otro div para los dispositivos pequeños y medianos-->
+            <div class="d-block d-md-none col-6 p-2 text-right">
+                <button class="btn btn-danger" id="search_button">
+                    <i class="fas fa-search"></i>
+                </button>
+            </div>
+            <!--Termina el formulario-->
         </div>
+
+        <!--Termina el encabezado-->
 
         <div>
             <div class="display-1 text-center">
                 CARRUSEL
                 <!--Aqui se pone el carrucel-->
             </div>
-            
+            <!--bloque de categorias-->
             <div id="categorias">
                 <div class="categoria">
+                    <!--Inicia cageroria 1-->
                     <div class="h3">
                         Categoria 1
                     </div>
                     <div class="categoria-items row flex-nowrap">
-                        <div class="categoria-item col-2">
+                        <!--Para tamaño pequeño se pone col-md-2 en todas las imagenes-->
+                        <div class="categoria-item col-4 col-md-2">
                             <div class ="card">
                                 <img src="https://picsum.photos/150/250" alt="">
                                 <div class="card-body">
@@ -88,7 +105,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="categoria-item col-2">
+                        <div class="categoria-item col-4 col-md-2">
                             <div class ="card">
                                 <img src="https://picsum.photos/150/250" alt="">
                                 <div class="card-body">
@@ -104,7 +121,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="categoria-item col-2">
+                        <div class="categoria-item col-4 col-md-2">
                             <div class ="card">
                                 <img src="https://picsum.photos/150/250" alt="">
                                 <div class="card-body">
@@ -120,7 +137,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="categoria-item col-2">
+                        <div class="categoria-item col-4 col-md-2">
                             <div class ="card">
                                 <img src="https://picsum.photos/150/250" alt="">
                                 <div class="card-body">
@@ -136,7 +153,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="categoria-item col-2">
+                        <div class="categoria-item col-4 col-md-2">
                             <div class ="card">
                                 <img src="https://picsum.photos/150/250" alt="">
                                 <div class="card-body">
@@ -152,24 +169,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="categoria-item col-2">
-                            <div class ="card">
-                                <img src="https://picsum.photos/150/250" alt="">
-                                <div class="card-body">
-                                    <div class="card-title">
-                                        Nombre item
-
-                                    </div>
-                                    <div class="card-text">
-                                        <i class="fas fa-thumbs-up"></i>
-                                        89%
-                                    </div>
-
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="categoria-item col-2">
+                        <div class="categoria-item col-4 col-md-2">
                             <div class ="card">
                                 <img src="https://picsum.photos/150/250" alt="">
                                 <div class="card-body">
@@ -186,7 +186,24 @@
                             </div>
                         </div>
 
-                        <div class="categoria-item col-2">
+                        <div class="categoria-item col-4 col-md-2">
+                            <div class ="card">
+                                <img src="https://picsum.photos/150/250" alt="">
+                                <div class="card-body">
+                                    <div class="card-title">
+                                        Nombre item
+
+                                    </div>
+                                    <div class="card-text">
+                                        <i class="fas fa-thumbs-up"></i>
+                                        89%
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="categoria-item col-4 col-md-2">
                             <div class ="card">
                                 <img src="https://picsum.photos/150/250" alt="">
                                 <div class="card-body">
@@ -205,13 +222,13 @@
                     </div>
 
                 </div>
-
+                <!--Inicia categoria 2-->
                 <div class="categoria">
                     <div class="h3">
                         Categoria 2
                     </div>
                     <div class="categoria-items row flex-nowrap">
-                        <div class="categoria-item col-2">
+                        <div class="categoria-item col-4 col-md-2">
                             <div class ="card">
                                 <img src="https://picsum.photos/150/250" alt="">
                                 <div class="card-body">
@@ -227,7 +244,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="categoria-item col-2">
+                        <div class="categoria-item col-4 col-md-2">
                             <div class ="card">
                                 <img src="https://picsum.photos/150/250" alt="">
                                 <div class="card-body">
@@ -243,7 +260,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="categoria-item col-2">
+                        <div class="categoria-item col-4 col-md-2">
                             <div class ="card">
                                 <img src="https://picsum.photos/150/250" alt="">
                                 <div class="card-body">
@@ -259,7 +276,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="categoria-item col-2">
+                        <div class="categoria-item col-4 col-md-2">
                             <div class ="card">
                                 <img src="https://picsum.photos/150/250" alt="">
                                 <div class="card-body">
@@ -275,7 +292,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="categoria-item col-2">
+                        <div class="categoria-item col-4 col-md-2">
                             <div class ="card">
                                 <img src="https://picsum.photos/150/250" alt="">
                                 <div class="card-body">
@@ -291,24 +308,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="categoria-item col-2">
-                            <div class ="card">
-                                <img src="https://picsum.photos/150/250" alt="">
-                                <div class="card-body">
-                                    <div class="card-title">
-                                        Nombre item
-
-                                    </div>
-                                    <div class="card-text">
-                                        <i class="fas fa-thumbs-up"></i>
-                                        89%
-                                    </div>
-
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="categoria-item col-2">
+                        <div class="categoria-item col-4 col-md-2">
                             <div class ="card">
                                 <img src="https://picsum.photos/150/250" alt="">
                                 <div class="card-body">
@@ -325,7 +325,24 @@
                             </div>
                         </div>
 
-                        <div class="categoria-item col-2">
+                        <div class="categoria-item col-4 col-md-2">
+                            <div class ="card">
+                                <img src="https://picsum.photos/150/250" alt="">
+                                <div class="card-body">
+                                    <div class="card-title">
+                                        Nombre item
+
+                                    </div>
+                                    <div class="card-text">
+                                        <i class="fas fa-thumbs-up"></i>
+                                        89%
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="categoria-item col-4 col-md-2">
                             <div class ="card">
                                 <img src="https://picsum.photos/150/250" alt="">
                                 <div class="card-body">
@@ -344,13 +361,13 @@
                     </div>
 
                 </div>
-
+                <!--Inicia categoria 3-->
                 <div class="categoria">
                     <div class="h3">
                         Categoria 3
                     </div>
                     <div class="categoria-items row flex-nowrap">
-                        <div class="categoria-item col-2">
+                        <div class="categoria-item col-4 col-md-2">
                             <div class ="card">
                                 <img src="https://picsum.photos/150/250" alt="">
                                 <div class="card-body">
@@ -366,7 +383,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="categoria-item col-2">
+                        <div class="categoria-item col-4 col-md-2">
                             <div class ="card">
                                 <img src="https://picsum.photos/150/250" alt="">
                                 <div class="card-body">
@@ -382,7 +399,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="categoria-item col-2">
+                        <div class="categoria-item col-4 col-md-2">
                             <div class ="card">
                                 <img src="https://picsum.photos/150/250" alt="">
                                 <div class="card-body">
@@ -398,7 +415,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="categoria-item col-2">
+                        <div class="categoria-item col-4 col-md-2">
                             <div class ="card">
                                 <img src="https://picsum.photos/150/250" alt="">
                                 <div class="card-body">
@@ -414,7 +431,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="categoria-item col-2">
+                        <div class="categoria-item col-4 col-md-2">
                             <div class ="card">
                                 <img src="https://picsum.photos/150/250" alt="">
                                 <div class="card-body">
@@ -430,24 +447,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="categoria-item col-2">
-                            <div class ="card">
-                                <img src="https://picsum.photos/150/250" alt="">
-                                <div class="card-body">
-                                    <div class="card-title">
-                                        Nombre item
-
-                                    </div>
-                                    <div class="card-text">
-                                        <i class="fas fa-thumbs-up"></i>
-                                        89%
-                                    </div>
-
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="categoria-item col-2">
+                        <div class="categoria-item col-4 col-md-2">
                             <div class ="card">
                                 <img src="https://picsum.photos/150/250" alt="">
                                 <div class="card-body">
@@ -464,7 +464,24 @@
                             </div>
                         </div>
 
-                        <div class="categoria-item col-2">
+                        <div class="categoria-item col-4 col-md-2">
+                            <div class ="card">
+                                <img src="https://picsum.photos/150/250" alt="">
+                                <div class="card-body">
+                                    <div class="card-title">
+                                        Nombre item
+
+                                    </div>
+                                    <div class="card-text">
+                                        <i class="fas fa-thumbs-up"></i>
+                                        89%
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="categoria-item col-4 col-md-2">
                             <div class ="card">
                                 <img src="https://picsum.photos/150/250" alt="">
                                 <div class="card-body">
@@ -487,12 +504,13 @@
 
 
             </div>
+            <!--Termina el bloque de categorias-->
 
 
         </div>
 
         <!--Pie de pagina-->
-        <div class="bg-danger row text-white">
+        <div class="bg-danger row text-white d-none d-md-block">
             <div class="col-6" id="redes">
                <a href="" class="text-white">
                     <i class="fab fa-facebook-square"></i>
@@ -511,6 +529,43 @@
                 Contactanos
             </div>
         </div>
+        <!--Termina pie de pagina-->
+        <!--Para el nuevo menu-->
+        <div class="row justify-content-end collapse" id="menu_footer">
+            <div class="col-4 bg-danger">
+                <div>
+                    <a href="" class="text-white">Inicicar sesión</a>
+                </div>
+                <div>
+                    <a href="" class="text-white">Registrarse</a>
+                </div>
+            </div>
+        </div>
+        <!--Otro div para dispositivos pequeños y ocultar el pie de pagina-->
+
+        <div class="bg-danger row text-white d-md-none text-center ">
+            <div class="col-3">
+                <button class="btn btn-danger footer_phone">
+                    <i class="fas fa-ticket-alt"></i>
+                </button>
+            </div>
+            <div class="col-3">
+                <button class="btn btn-danger footer_phone">
+                    <i class="fas fa-tv"></i>
+                </button>
+            </div>
+            <div class="col-3">
+                <button class="btn btn-danger footer_phone">
+                    <i class="fas fa-theater-masks"></i>
+                </button>
+            </div>
+            <div class="col-3">
+                <button class="btn btn-danger footer_phone" data-toggle="collapse" data-target="#menu_footer">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </div>
+        </div>
+        <!--Termina el modulo pequeño-->
     </div>
     <!--Modal login-->
     <div class="modal fade" id="modalLogin" tabindex="-1">

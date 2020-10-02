@@ -1,5 +1,10 @@
 #logo{
-    max-width: 90px;
+    max-width: 50px;
+}
+@media (min-width: 768px){
+    #logo{
+        max-width: 90px;
+    } 
 }
 #redes{
     font-size: 2em;
@@ -19,4 +24,10 @@
 }
 .vote-button{
     font-size: 3em;
+}
+#search_button{
+    font-size: 2em;
+}
+.footer_phone{
+    font-size: 2em;
 }
